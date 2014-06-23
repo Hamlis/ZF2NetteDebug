@@ -34,7 +34,7 @@ class Module
             || empty($config['nette_debug']['enabled'])
         ) return;
 
-        require __DIR__ . '/src/Nette/Diagnostics/exceptions.php';
+        require_once __DIR__ . '/src/Nette/Diagnostics/exceptions.php';
         
         array_key_exists('bar', $config['nette_debug']) or
             $config['nette_debug']['bar'] = true;
